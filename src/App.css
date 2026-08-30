@@ -1,0 +1,259 @@
+/* ========================= GLOBAL ========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8fc;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ========================= COMMON PAGE HEADER ========================= */
+
+.page-header {
+  text-align: center;
+  padding: 55px 20px 30px;
+}
+
+.page-header h1 {
+  color: #1e3a8a;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.page-header p {
+  max-width: 650px;
+  margin: auto;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ========================= COMMON BUTTONS ========================= */
+
+.primary-btn,
+.secondary-btn,
+.danger-btn,
+.delete-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: #eef4ff;
+  color: #1e3a8a;
+}
+
+.secondary-btn:hover {
+  background: #dbeafe;
+  transform: translateY(-2px);
+}
+
+.danger-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.danger-btn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  transform: translateY(-2px);
+}
+
+/* ========================= RESPONSIVE TABLET ========================= */
+
+@media (max-width: 900px) {
+
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .help-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guide-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* ========================= RESPONSIVE MOBILE ========================= */
+
+@media (max-width: 650px) {
+  /* NAVBAR */
+
+  .navbar {
+    padding: 15px 18px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+  }
+
+  .navbar-links a {
+    padding: 5px 0;
+    font-size: 13px;
+  }
+
+  .navbar-links a::after {
+    bottom: 0;
+  }
+ /* COMMON HEADER */
+
+  .page-header {
+    padding: 40px 20px 25px;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+  .page-header p {
+    font-size: 15px;
+  }
+  /* HOME */
+
+  .hero {
+    padding: 50px 20px 30px;
+  }
+  .hero h1 {
+    font-size: 42px;
+  }
+  .hero h2 {
+    font-size: 23px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    margin-top: 15px;
+  }
+
+  .feature-card {
+    min-height: 160px;
+  }
+  /* FIND HELP */
+
+  .help-options {
+    grid-template-columns: 1fr;
+  }
+  .help-card {
+    min-height: 125px;
+  }
+  .help-result {
+    padding: 25px 18px;
+  }
+   /* EMERGENCY */
+
+  .emergency-hero {
+    padding: 40px 20px 25px;
+  }
+
+  .emergency-hero h1 {
+    font-size: 34px;
+  }
+
+  .emergency-options {
+    grid-template-columns: 1fr;
+  }
+
+  .location-button {
+    grid-column: auto;
+  }
+  /* GUIDE */
+
+  .guide-options {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-result {
+    padding: 25px 18px;
+  }
+  /* CONTACTS */
+
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: 25px 18px;
+  }
+
+  .custom-contact-section {
+    width: calc(100% - 40px);
+  }
+  /* BUTTONS */
+
+  .primary-btn,
+  .secondary-btn,
+  .danger-btn,
+  .delete-btn {
+    width: 100%;
+  }
+
+  .help-actions,
+  .guide-actions,
+  .contact-actions {
+    flex-direction: column;
+  }}

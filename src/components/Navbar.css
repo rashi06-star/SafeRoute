@@ -1,0 +1,71 @@
+
+/* ========================= NAVBAR ========================= */
+
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #e5eaf1;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+  
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1e3a8a;
+    font-size: 24px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  .navbar-links a {
+    position: relative;
+    color: #475569;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 25px 0;
+    transition: color 0.25s ease;
+  }
+  
+  .navbar-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 17px;
+    width: 0;
+    height: 2px;
+    background: #2563eb;
+    border-radius: 10px;
+    transition: width 0.25s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #1e3a8a;
+  }
+  
+  .navbar-links a:hover::after {
+    width: 100%;
+  }
+
+.navbar-logo img {
+  width: 55px;
+  height: auto;
+  display: block;
+}

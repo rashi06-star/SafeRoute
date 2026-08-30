@@ -1,0 +1,92 @@
+/* ========================= EMERGENCY ========================= */
+
+.emergency-page {
+    max-width: 1050px;
+    margin: auto;
+    padding-bottom: 70px;
+  }
+  
+  .emergency-hero {
+    text-align: center;
+    padding: 55px 20px 30px;
+  }
+  
+  .emergency-hero h1 {
+    color: #b91c1c;
+    font-size: 44px;
+    margin-bottom: 12px;
+  }
+  
+  .emergency-hero p {
+    color: #64748b;
+    font-size: 17px;
+  }
+  
+  .emergency-options {
+    max-width: 850px;
+    margin: 25px auto;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  
+    padding: 0 20px;
+  }
+  
+  .emergency-link {
+    display: block;
+  }
+  
+  .emergency-button,
+  .location-button {
+    width: 100%;
+    min-height: 60px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+  }
+  
+  .emergency-button {
+    background: #fff1f2;
+    color: #b91c1c;
+    border: 1px solid #fecdd3;
+  }
+  
+  .emergency-button:hover {
+    background: #fee2e2;
+    transform: translateY(-3px);
+  }
+  
+  .location-button {
+    grid-column: 1 / -1;
+    background: #2563eb;
+    color: white;
+  }
+  
+  .location-button:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+  }
+  
+  .emergency-note {
+    width: min(650px, calc(100% - 40px));
+    margin: 45px auto 0;
+    padding: 25px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+  }
+  
+  .emergency-note h3 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+  }
+  
+  .emergency-note p {
+    color: #64748b;
+    line-height: 1.6;
+  }
